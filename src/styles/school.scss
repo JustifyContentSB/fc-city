@@ -1,0 +1,116 @@
+@import 'partials';
+
+.school {
+    &__content {
+        margin-bottom: 30px;
+    }
+
+    .swiper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding: 0 var(--mainPadding);
+
+        &-slide {
+            width: 300px;
+        }
+
+        &-pagination {
+            display: none;
+        }
+    }
+
+    @include ml(xs) {
+        &__slider {
+            .swiper {
+                padding: 0 calc((100% - var(--containerWidth)) / 2 + var(--mainPadding));
+            }
+
+            .video {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    @include ml(md) {
+        .swiper {
+            &-slide {
+                width: 460px;
+            }
+        }
+    }
+
+    @include ml(lg) {
+        &__inner {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &__header {
+            min-width: 574px;
+        }
+
+        &__content {
+            width: calc(100% - 574px);
+            margin: 0;
+            margin-top: -80px;
+            order: 1;
+            position: relative;
+        }
+
+        .swiper {
+            padding-left: 0;
+            padding-right: var(--mainPadding);
+
+            &-slide {
+                width: 520px;
+            }
+        }
+    }
+
+    @include ml(xl) {
+        &__content {
+            margin-top: -130px;
+        }
+
+        .swiper {
+            &-slide {
+                width: 670px;
+            }
+        }
+    }
+
+    @include ml(xxl) {
+        &__header {
+            margin-right: 66px;
+        }
+
+        &__content {
+            width: calc(100% - 640px);
+           margin-top: -105px;
+        }
+
+        .swiper {
+            &-slide {
+                width: 846px;
+            }
+        }
+    }
+}
+
+.section.section--school {
+    .section {
+        &__header {
+            margin-bottom: 0;
+        }
+    }
+
+    @include ml(lg) {
+        padding-top: 0;
+    }
+
+    @include ml(xxl) {
+        padding-left: calc((100% - var(--containerWidth)) / 2);
+    }
+}

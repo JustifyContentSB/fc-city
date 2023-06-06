@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use 'sass:math';
+
+@mixin margin-fix() {
+  & > *:last-child {
+      margin-bottom: 0;
+  }
+}
+
+@mixin spinner($size: 48px, $thickness: 3px, $duration: 1s, $color: $primary) {
+  @keyframes rotating {
+      from {
+          transform: rotate(0deg);
+      }
+
+      to {
+          transform: rotate(360deg);
+      }
+  }
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: $size;
+  height: $size;
+  margin-left: #{math.div($size, 2) * -1};
+  margin-top: #{math.div($size, 2) * -1};
+  border: #{$color} #{$thickness} solid;
+  border-left-color: transparent;
+  border-radius: 50%;
+  animation: rotating #{$duration} linear infinite;
+}

@@ -1,0 +1,52 @@
+@import 'partials';
+
+.process {
+    .swiper {
+        &-slide {
+            width: 300px;
+        }
+    }
+
+    @include ml(xs) {
+        &__slider {
+            .video {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    @include ml(lg) {
+        .swiper {
+            &-slide {
+                width: 520px;
+            }
+
+            &-navigation {
+                left: 60px;
+            }
+        }
+    }
+
+    @include ml(xl) {
+        .swiper {
+            &-slide {
+                width: 660px;
+            }
+
+            &-navigation {
+                left: 30%;
+            }
+        }
+    }
+
+    @include ml(xxl) {
+        .swiper {
+            padding: 0 calc((100% - var(--containerWidth)) / 2 + var(--mainPadding));
+
+            &-slide {
+                width: 860px;
+            }
+        }
+    }
+}

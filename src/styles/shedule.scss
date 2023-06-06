@@ -1,0 +1,139 @@
+@import 'partials';
+
+.shedule {
+    color: $text-color;
+
+    &__manage {
+        margin-bottom: 30px;
+    }
+
+    &__box {
+        margin-bottom: 50px;
+
+        &-title {
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 24px;
+            @include font-size(24, 36);
+            line-height: 130%;
+        }
+    }
+
+    &__info {
+        margin-bottom: 4px;
+        padding: 10px 16px;
+        background: $section-background;
+        color: #fff;
+
+        &--top {
+            border-radius: 10px 10px 0px 0px;
+        }
+    }
+
+    &__place {
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    &__street {
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+    }
+
+    &__main {
+        &-item {
+            margin-bottom: 4px;
+            padding: 16px;
+            background: $gray;
+
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-title {
+            margin-bottom: 16px;
+            font-size: 20px;
+            line-height: 100%;
+            font-weight: 700;
+        }
+
+        &-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 6px;
+
+            &__item {
+                padding: 5px 17px;
+                border: 1px solid $text-color;
+                border-radius: 10px;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__training {
+        padding: 10px 16px;
+        background: #D9F2FF;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    &__desc {
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 138%;
+    }
+
+    &__name {
+        margin: 0;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    @include ml(sm) {
+        &__list.grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        &__item.grid__item {
+            margin: 0;
+        }
+    }
+
+    @include ml(lg) {
+        &__manage {
+            margin-bottom: 40px;
+        }
+
+        &__list.grid {
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+    }
+
+    @include ml(xl) {
+        &__manage {
+            margin-bottom: 50px;
+        }
+
+        &__list.grid {
+            grid-gap: 30px;
+        }
+    }
+}

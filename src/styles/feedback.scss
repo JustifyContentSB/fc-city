@@ -1,0 +1,88 @@
+@import 'partials';
+
+.feedback {
+    margin: 0 auto;
+    padding: 50px 0 400px;
+    background: $black url('../images/feedback/feedback-mob.jpg') no-repeat center bottom / cover;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+
+    &__title {
+        margin-bottom: 18px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+    }
+
+    &__desc {
+        margin-bottom: 20px;
+    }
+
+    form {
+        input {
+            border-color: $white;
+            background: $white;
+        }
+    }
+
+    @include ml(sm) {
+        &__content {
+            max-width: 710px;
+            margin: 0;
+        }
+
+        .form {
+            &__manage {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 30px;
+            }
+
+            &__label {
+                margin-bottom: 0;
+            }
+
+            &__submit {
+                width: auto;
+            }
+        }
+    }
+
+    @include ml(md) {
+        padding-bottom: 50px;
+        background-image: url('../images/feedback/feedback-desk.jpg');
+        background-position: center center;
+    }
+
+    @include ml(xl) {
+        padding: 60px 0;
+
+        &__lead {
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            margin-bottom: 15px;
+            font-size: 40px;
+        }
+    }
+
+    @include ml(xxl) {
+        padding: 75px 0;
+        min-height: 610px;
+
+        &__title {
+            font-size: 48px;
+        }
+
+        &__desc {
+            margin-bottom: 44px;
+        }
+
+        &__content {
+            max-width: 772px;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@import 'partials';
+
+.person {
+    &__career {
+        &-title {
+            font-size: 24px;
+        }
+    }
+
+    &__info {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .wysiwyg & {
+            ul {
+                padding-left: 10px;
+
+                li {
+                    padding-left: 30px;
+                    margin-bottom: 30px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &::before {
+                        top: 10px;
+                        transform: none;
+                    }
+                }
+
+                p {
+                    &:not(:last-child) {
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__biography {
+        .wysiwyg & {
+            li {
+                padding: 0;
+                margin-bottom: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__header {
+        &--desk {
+            display: none;
+        }
+    }
+
+    @include ml(sm) {
+        &__info {
+            display: flex;
+        }
+    }
+
+    @include ml(lg) {
+        &__inner {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        &__info {
+            display: block;
+            margin-bottom: 0;
+            width: 340px;
+            min-width: 340px;
+        }
+
+        &__header--mob.section__header {
+            display: none;
+        }
+
+        &__header--desk.section__header {
+            display: block;
+        }
+
+        &__career {
+            width: calc(100% - 370px);
+
+            &-title {
+                margin-bottom: 35px;
+            }
+        }
+
+        p.person__career-title {
+            margin-bottom: 35px;
+        }
+    }
+}

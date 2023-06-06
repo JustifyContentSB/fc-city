@@ -1,0 +1,127 @@
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__top-wrapper">
+                <div class="footer__top container">
+                    <a class="footer__logo" href="#"><img src="images/icons/logo-big.png" alt="логотип" width="112" height="142"></a>
+                    <div class="footer__contacts">
+                        <p class="footer__contacts-title">Связаться с нами</p>
+                        <a class="footer__tel" href="teL:+74950000000">+7 (495) 000 00 00</a>
+                        <div class="footer__social">
+                            <p class="footer__social-title">Звоните или просто напишите нам</p>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a class="social__btn social__btn--telegram" href="#">
+                                        <i class="icon icon-telegram"></i>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__btn social__btn--viber" href="#">
+                                        <i class="icon icon-viber"></i>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__btn social__btn--whatsapp" href="#">
+                                        <i class="icon icon-whatsapp"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="footer__nav">
+                        <div class="footer__nav-col">
+                            <p class="footer__nav-title">О футбольной школе</p>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a class="footer__nav-link" href="about.html">О нас</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a class="footer__nav-link" href="news.html">Новости</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a class="footer__nav-link" href="progress.html">Достижения</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a class="footer__nav-link" href="prospects.html">Перспективы</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav-col">
+                            <p class="footer__nav-title">Информация для родителей</p>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a class="footer__nav-link" href="team.html">Тренеры</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a class="footer__nav-link" href="shedule.html">Расписание</a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a class="footer__nav-link" href="address.html">Адреса</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom-wrapper">
+                <div class="footer__bottom container">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#">Карта сайта</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#">Политика конфиденциальности</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#">Пользовательское соглашение</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#">Политика использования Cookoe файлов</a>
+                        </li>
+                    </ul>
+                    <p class="footer__year">© 2023</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @@include('modals/success.html')
+
+    <!-- Back to top -->
+    <div id="topper" class="topper" data-topper></div>
+
+    <script>
+        window.data = {};
+
+        window.data.location = [
+            {
+                id: 1,
+                coords: [53.209433, 50.173648],
+                title: "«СИТИ» на Революционной",
+                phones: ['+7 (846) 000 00 00'],
+                active: true,
+                city: "Самара"
+            }, {
+                id: 2,
+                coords: [53.217262, 50.163875],
+                title: '«СИТИ» на Революционной 2',
+                phones: ['+7 (846) 000 00 00', '+7 (383) 38383838'],
+                active: false,
+                city: "Самара"
+            }, {
+                id: 3,
+                coords: [55.755864, 37.617698],
+                title: '«Москва',
+                phones: ['+7 (846) 000 00 00', '+7 (383) 38383838'],
+                active: false,
+                city: "Москва"
+            }
+        ];
+    </script>
+
+    <!-- js:main --><!-- /js:main -->
+    <!-- js:modules --><!-- /js:modules -->
+</body>
+
+</html>

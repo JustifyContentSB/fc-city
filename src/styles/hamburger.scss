@@ -1,0 +1,56 @@
+@import 'partials';
+
+.hamburger {
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #fff;
+
+    span {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+
+        &::before,
+        &::after {
+            height: 3px;
+        }
+
+        .header__hamburger & {
+            &::after {
+                width: 50%;
+            }
+        }
+
+        @include burger($transition-duration: $navbar-duration);
+
+        .menu-opened & {
+            @include burger-to-cross($black);
+        }
+
+        .header--fixed &,
+        .header--white & {
+          @include burger-parts {
+            background-color: $burger-color-fixed;
+          }
+
+          .menu-opened & {
+            @include burger-to-cross($black);
+          }
+        }
+    }
+
+    @include hover {
+        span {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}

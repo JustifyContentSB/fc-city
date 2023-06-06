@@ -1,0 +1,82 @@
+@import 'partials';
+
+.manage {
+    &__list {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        padding-right: 30px;
+        justify-content: flex-start;
+        position: relative;
+        font-size: 20px;
+
+        @include icomoon(arrow-down, after) {
+            font-size: 14px;
+            margin-left: auto;
+            display: inline-block;
+            color: $black;
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    &__submenu {
+        width: 100%;
+        padding: 30px 22px;
+        background: #fff;
+        border: 1px solid rgba(206, 209, 213, 0.4);
+        border-radius: 10px;
+        position: absolute;
+        top: calc(100% + 8px);
+        filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.05));
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+
+        .agree {
+            font-weight: 400;
+            font-size: 18px;
+
+            &__checkbox {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    @include ml(sm) {
+        width: 100%;
+        max-width: 710px;
+
+        &__list {
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+        }
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

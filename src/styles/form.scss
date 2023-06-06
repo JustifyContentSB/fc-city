@@ -1,0 +1,134 @@
+@import 'partials';
+
+@keyframes onAutoFillStart {
+    from {}
+    to {}
+}
+
+@keyframes onAutoFillCancel {
+    from {}
+    to {}
+}
+
+.form {
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    input[type="number"],
+    input[type="password"],
+    textarea {
+        display: block;
+        width: 100%;
+        border: 1px solid $input-border;
+        border-radius: $input-radius;
+        padding: $input-padding;
+        background: $gray;
+        @include transition(border-color);
+
+        &:focus {
+            border-color: $primary;
+        }
+
+        &:-webkit-autofill {
+            animation-name: onAutoFillStart;
+            transition: background-color 50000s ease-in-out 0s;
+        }
+
+        &:not(:-webkit-autofill) {
+            animation-name: onAutoFillCancel;
+        }
+    }
+
+    input,
+    textarea,
+    button {
+        font-variant-ligatures: none;
+        appearance: none;
+        outline: 0!important;
+        box-shadow: none!important;
+
+        &[disabled],
+        &[readonly],
+        &.is-disabled {
+            pointer-events: none;
+            opacity: $disabled-opacity;
+        }
+    }
+
+    input[type="file"] {
+        display: none;
+        visibility: hidden;
+    }
+
+    button {
+        border: 0;
+    }
+
+    select {
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background: transparent;
+        background-image: none;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120%;
+        color: $text-color;
+    }
+
+    &__desc {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: $text-color;
+    }
+
+    &__control {
+        margin-bottom: 12px;
+    }
+
+    &__label {
+        margin-bottom: 16px;
+        display: block;
+
+        color: $black;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__field {
+        font-weight: 600;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    &__manage {
+        margin-bottom: 26px;
+    }
+
+    &__agree {
+        margin-bottom: 24px;
+    }
+
+    &__submit {
+        width: 100%;
+    }
+
+    @include ml(xxl) {
+        &__agree {
+            margin-bottom: 32px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import 'partials';
+
+.topper {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    opacity: 1;
+
+    .is-ready & {
+        z-index: 999;
+        opacity: 1;
+    }
+
+    &:hover {
+      &::before {
+          color: $white;
+          background: $primary;
+      }
+    }
+
+    @include icomoon('arrow-up') {
+        font-size: 12px;
+        color: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+        border: 1px solid $primary;
+        border-radius: 50%;
+        background: $green;
+
+        @include transition(background);
+
+        @include ms(md) {
+            font-size: 20px;
+            right: 20px;
+            bottom: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        @include ms(md) {
+          font-size: 12px;
+        }
+
+        @include mo(xs) {
+            right: 15px;
+            bottom: 15px;
+        }
+    };
+
+    @include ml(xxl) {
+        right: 92px;
+    }
+}

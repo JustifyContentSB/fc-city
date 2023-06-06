@@ -1,0 +1,46 @@
+@import 'partials';
+
+.club {
+    &__box {
+        margin-bottom: 54px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__aside {
+        display: none;
+    }
+
+    @include ml(lg) {
+        &__inner {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &__aside {
+            display: block;
+            width: 340px;
+            min-width: 340px;
+            margin-left: 30px;
+            position: sticky;
+            top: 10px;
+
+            .btn {
+                width: 100%;
+                padding: 19px;
+            }
+        }
+
+        &__info {
+            width: calc(100% - 370px);
+        }
+    }
+
+    @include ml(xl) {
+        &__box {
+            margin-bottom: 30px;
+        }
+    }
+}

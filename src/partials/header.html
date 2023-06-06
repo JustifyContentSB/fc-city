@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru"@@if(context.mode){ class="mode--@@mode"}>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>@@title</title>
+
+    <!-- css:main --><!-- /css:main -->
+    <!-- css:modules --><!-- /css:modules -->
+</head>
+
+<body class="page@@if(layout != ''){ page--@@layout}" data-preload>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header__inner">
+                <div class="header__top-wrapper">
+                    <div class="header__top container">
+                        <div class="header__location">
+                            <a class="header__location-active" href="#">Самара</a>
+                            <ul class="header__location-list"></ul>
+                        </div>
+                        <a class="header__tel header__top-tel" href="tel:+79372339911">+7(937) 233 99 11</a>
+                        <ul class="social header__social">
+                            <li class="social__item">
+                                <a class="social__btn social__btn--telegram" href="#">
+                                    <i class="icon icon-telegram"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__btn social__btn--viber" href="#">
+                                    <i class="icon icon-viber"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__btn social__btn--whatsapp" href="#">
+                                    <i class="icon icon-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="header__top-profile">
+                            <div class="header__profile">
+                                <a class="header__profile-btn" href="#"><i class="icon icon-profile"></i> Личный кабинет</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom-wrapper">
+                    <div class="header__bottom container">
+                        <div class="header__logo-inner">
+                            <a class="header__logo" href="#">
+                                <p class="header__logo-text">Детская футбольная школа «СИТИ»</p>
+                                <img src="images/icons/logo.png" alt="логотип" width="44" height="55">
+                            </a>
+                        </div>
+                        <a class="header__tel" href="tel:+79372339911">+7 (937) 233 99 11</a>
+                        <nav class="header__nav">
+                            <ul class="header__nav-list">
+                                <li class="header__nav-item">
+                                    <a href="about.html">О школе</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="news.html">Новости</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="team.html">Тренеры</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="shedule.html">Расписание</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="#">Вопрос-ответ</a>
+                                </li>
+                                <li class="header__nav-item">
+                                    <a href="address.html">Адреса</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__manage">
+                            <div class="header__profile">
+                                <a class="header__profile-btn" href="#"><i class="icon icon-profile"></i></a>
+                            </div>
+                            <div class="header__hamburger">
+                                @@include('includes/hamburger.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navbar -->
+        <aside class="navbar navbar--nav">
+            <div class="navbar__wrapper">
+                <div class="navbar__content">
+                    <div class="navbar__nav"></div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main" role="main">

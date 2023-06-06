@@ -1,0 +1,45 @@
+@import 'partials';
+
+.agree {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+
+    &__label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__checkbox {
+        width: 22px;
+        min-width: 22px;
+        height: 22px;
+        margin-right: 10px;
+        background: #F2F3F5;
+        border-radius: 4px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+
+        @include icomoon(check, after) {
+            font-size: 14px;
+            margin-top: 4px;
+            display: inline-block;
+            opacity: 0;
+            color: $black;
+        }
+    }
+
+    input {
+        display: none;
+
+        &:checked ~ .agree__checkbox {
+            background: $green;
+
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}

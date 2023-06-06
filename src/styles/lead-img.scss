@@ -1,0 +1,7 @@
+@import 'partials';
+
+.lead-img {
+    @include ml(lg) {
+        margin-bottom: 20px;
+    }
+}

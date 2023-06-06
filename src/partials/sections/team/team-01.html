@@ -1,0 +1,30 @@
+<!-- Team -->
+<section class="section section--team">
+    <div class="section__wrapper container">
+        <div class="section__header">
+            <h2 class="section__title">Наши тренеры</h2>
+            <div class="section__manage">
+                <div class="section__choose">
+                    <a href="#">Все тренеры</a>
+                </div>
+                <div class="section__controls">
+                    <a class="section__controls-btn btn-circle btn-circle--outline" href="#">
+                        <span class="visually-hidden">Предыдущий слайд</span>
+                        <i class="icon icon-arrow-left"></i>
+                    </a>
+                    <a class="section__controls-btn btn-circle" href="#">
+                        <span class="visually-hidden">Следующий слайд</span>
+                        <i class="icon icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section__content">
+            <div class="team">
+                <ul class="team__list grid">
+                    @@loop('items/team.html', '/data/team/team-01.json')
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

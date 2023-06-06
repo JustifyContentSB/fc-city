@@ -1,0 +1,47 @@
+<!-- News -->
+<section class="section section--news">
+    <div class="section__wrapper container">
+        <div class="section__header section__header--manage">
+            <h2 class="section__title section__title--big">Новости</h2>
+            <div class="section__controls">
+                <a class="section__controls-btn btn-circle btn-circle--outline" href="#">
+                    <span class="visually-hidden">Предыдущий слайд</span>
+                    <i class="icon icon-arrow-left"></i>
+                </a>
+                <a class="section__controls-btn btn-circle" href="#">
+                    <span class="visually-hidden">Следующий слайд</span>
+                    <i class="icon icon-arrow-right"></i>
+                </a>
+            </div>
+            <ul class="section__tabs section__tabs--date">
+                <li class="section__tabs-item">
+                    <a class="section__tabs-btn is-active section__title" href="#">Май 23</a>
+                </li>
+                <li class="section__tabs-item">
+                    <a class="section__tabs-btn section__title" href="#">Апрель 23</a>
+                </li>
+                <li class="section__tabs-item">
+                    <a class="section__tabs-btn section__title" href="#">Март 23</a>
+                </li>
+                <li class="section__tabs-item">
+                    <a class="section__tabs-btn section__title" href="#">Февраль 23</a>
+                </li>
+                <li class="section__tabs-item">
+                    <a class="section__tabs-btn section__title" href="#">Январь 23</a>
+                </li>
+                <li class="section__tabs-item">
+                    <a class="section__tabs-btn section__title" href="#">Декабрь 23</a>
+                </li>
+            </ul>
+        </div>
+        <div class="section__content">
+            <div class="news">
+                <ul class="news__list grid">
+                    @@loop('items/news/news-02.html', '/data/news/news-02.json')
+                </ul>
+            </div>
+
+            @@include('sections/pagination.html')
+        </div>
+    </div>
+</section>

@@ -1,0 +1,515 @@
+<!-- Shedule -->
+<section class="section section--shedule">
+    <div class="section__wrapper container">
+        <div class="section__header">
+            <h2 class="section__title section__title--big">Расписание</h2>
+        </div>
+        <div class="section__content">
+            <div class="shedule">
+                <div class="shedule__inner">
+                    <div class="shedule__manage manage">
+                        <ul class="manage__list">
+                            <li class="manage__item">
+                                <a class="manage__btn btn-outline" href="#">Школа</a>
+                                <ul class="manage__submenu">
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">Подготовительная школа</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">Старшая школа</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="manage__item">
+                                <a class="manage__btn btn-outline" href="#">Группы по году рождения</a>
+                                <ul class="manage__submenu">
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2008-2007</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2010</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2011-2010</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2011</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2011-2009</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2012</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2013</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2011</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2014/2013</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2014</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2015</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="manage__submenu-item">
+                                        <div class="agree">
+                                            <label class="agree__label">
+                                                <input type="checkbox">
+                                                <span class="agree__checkbox"></span>
+                                                <span class="agree__text">2016</span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shedule__content">
+                        <div class="shedule__box">
+                            <h3 class="shedule__box-title">Расписание подготовительной  школы "Сити" (от 3-5 лет)</h3>
+                            <ul class="shedule__list grid">
+                                <!-- @@loop('items/shedule.html', '/data/shedule.json') -->
+
+                                <li class="shedule__item grid__item">
+                                    <div class="shedule__info shedule__info--top">
+                                        <p class="shedule__place">ТЦ Айсберг (3-5лет)</p>
+                                        <p class="shedule__street">ул.Дачная,2</p>
+                                    </div>
+                                    <ul class="shedule__main">
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2019</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>СР 18:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВС 18:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 18:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 18:00</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2018</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>СР 19:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВС 19:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 19:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 19:00</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2017</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>СР 20:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВС 20:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 20:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 20:00</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="shedule__training">
+                                        <div class="shedule__desc">
+                                            <span class="shedule__pro">Тренер подготов. школы</span>
+                                            <span class="shedule__time"><i class="icon icon-time"></i> 1,5 ч</span>
+                                        </div>
+                                        <p class="shedule__name">Ножов Никита Сергеевич</p>
+                                    </div>
+                                </li>
+
+                                <li class="shedule__item grid__item">
+                                    <div class="shedule__info shedule__info--top">
+                                        <p class="shedule__place">Манеж Звезда (3-5лет)</p>
+                                        <p class="shedule__street">Московское ш.77</p>
+                                    </div>
+                                    <ul class="shedule__main">
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2019-2018</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 18:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 18:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 18:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 18:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>СР 18:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВС 17:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>СР 19:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВС 18:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2017</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 18:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 18:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 19:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 19:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>СР 18:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВС 17:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>СР 19:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВС 18:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="shedule__training">
+                                        <div class="shedule__desc">
+                                            <span class="shedule__pro">Тренер подготов. школы</span>
+                                            <span class="shedule__time"><i class="icon icon-time"></i> 1,5 ч</span>
+                                        </div>
+                                        <p class="shedule__name">Ножов Никита Сергеевич</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shedule__box">
+                            <h3 class="shedule__box-title">Расписание старшей школы "Сити" (от 6 лет)</h3>
+                            <ul class="shedule__list grid">
+                                <!-- @@loop('items/shedule.html', '/data/shedule.json') -->
+
+                                <li class="shedule__item grid__item">
+                                    <div class="shedule__info shedule__info--top">
+                                        <p class="shedule__place">манеж "РФЛ-Арена"</p>
+                                        <p class="shedule__street">ул.Революционная, 64 К1. </p>
+                                    </div>
+                                    <ul class="shedule__main">
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2016 (3)</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 17:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 16:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 16:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2016 (2)</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 17:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 16:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 16:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2016 (1)</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 17:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 16:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 16:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="shedule__training">
+                                        <div class="shedule__desc">
+                                            <span class="shedule__pro">Старший тренер</span>
+                                            <span class="shedule__time"><i class="icon icon-time"></i> 1,5 ч</span>
+                                        </div>
+                                        <p class="shedule__name">Ялбуев Вадим Дмитриевич</p>
+                                    </div>
+                                </li>
+
+                                <li class="shedule__item grid__item">
+                                    <div class="shedule__info shedule__info--top">
+                                        <p class="shedule__place">манеж "РФЛ-Арена"</p>
+                                        <p class="shedule__street">ул.Революционная, 64 К1. </p>
+                                    </div>
+                                    <ul class="shedule__main">
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2016 (3)</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 17:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 16:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 16:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2016 (2)</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 17:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 16:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 16:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2016 (1)</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 17:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 16:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 16:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="shedule__training">
+                                        <div class="shedule__desc">
+                                            <span class="shedule__pro">Старший тренер</span>
+                                            <span class="shedule__time"><i class="icon icon-time"></i> 1,5 ч</span>
+                                        </div>
+                                        <p class="shedule__name">Артамонов Дмитрий Николаевич</p>
+                                    </div>
+                                </li>
+
+                                <li class="shedule__item grid__item">
+                                    <div class="shedule__info shedule__info--top">
+                                        <p class="shedule__place">манеж "РФЛ-Арена"</p>
+                                        <p class="shedule__street">ул.Революционная, 64 К1. </p>
+                                    </div>
+                                    <ul class="shedule__main">
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2016 (3)</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 17:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 16:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 16:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2016 (2)</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 17:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 16:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 16:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Группа 2016 (1)</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 17:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 16:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 16:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="shedule__training">
+                                        <div class="shedule__desc">
+                                            <span class="shedule__pro">Старший тренер</span>
+                                            <span class="shedule__time"><i class="icon icon-time"></i> 1,5 ч</span>
+                                        </div>
+                                        <p class="shedule__name">Артамонов Дмитрий Николаевич</p>
+                                    </div>
+                                </li>
+
+                                <li class="shedule__item grid__item">
+                                    <div class="shedule__info shedule__info--top">
+                                        <p class="shedule__place">манеж "РФЛ-Арена"</p>
+                                        <p class="shedule__street">ул.Революционная, 64 К1. </p>
+                                    </div>
+                                    <ul class="shedule__main">
+                                        <li class="shedule__main-item">
+                                            <p class="shedule__main-title">Утренняя группа 2014/2013</p>
+                                            <ul class="shedule__main-group">
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПН 17:00</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ВТ 16:30</p>
+                                                </li>
+                                                <li class="shedule__main-group__item">
+                                                    <p>ПТ 16:30</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <div class="shedule__training">
+                                        <div class="shedule__desc">
+                                            <span class="shedule__pro">Старший тренер</span>
+                                            <span class="shedule__time"><i class="icon icon-time"></i> 1,5 ч</span>
+                                        </div>
+                                        <p class="shedule__name">Татаринов Дмитрий Тимурович</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    @@include('sections/pagination.html')
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

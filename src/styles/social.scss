@@ -1,0 +1,40 @@
+@import 'partials';
+
+.social {
+    display: inline-flex;
+    font-size: 23px;
+
+    &__item {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__btn {
+        width: 36px;
+        height: 36px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background: #13A5F7;
+        border-radius: 50%;
+
+        &--telegram {
+            .icon {
+                position: relative;
+                left: -2px;
+            }
+        }
+
+        &--viber {
+            background: #7D519E;
+        }
+
+        &--whatsapp {
+            background: #17980E;
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@import 'partials';
+
+:root {
+    --swiper-pagination-bullet-horizontal-gap: 8px;
+}
+
+.swiper {
+    [data-swiper] & {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding: 0 var(--mainPadding);
+    }
+
+    &-control {
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+        margin-right: 16px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        background: $green;
+        color: $black;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @include icomoon(arrow-left, after) {
+            font-size: 14px;
+            display: inline-block;
+            color: $black;
+        }
+
+        &--next {
+            @include icomoon(arrow-right, after) {
+                margin-left: 4px;
+            }
+        }
+
+        &.swiper-button-disabled {
+            border: 1px solid #F2F2F2;
+            background: #fff;
+            opacity: 1;
+        }
+    }
+
+    &-pagination {
+        .swiper-pagination-bullet {
+            width: 16px;
+            height: 16px;
+            background: #fff;
+            opacity: 1;
+
+            &-active {
+                background: $green;
+            }
+        }
+
+        .slider & {
+            display: none;
+        }
+    }
+
+    &-navigation {
+        .slider & {
+            display: none;
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            z-index: 10;
+        }
+    }
+
+    @include ml(lg) {
+        &-navigation {
+            .slider & {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+@import 'partials';
+
+.page404 {
+    &__top {
+        margin-bottom: 25px;
+        position: relative;
+    }
+
+    &__title {
+        margin: 0;
+        padding-bottom: 160px;
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 144px;
+        color: $text-color;
+        position: absolute;
+        bottom: 10%;
+        left: 56%;
+        transform: translateX(-50%);
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 242px;
+            height: 40px;
+            background: url('../images/page404/gates-shadow.svg') no-repeat center;
+        }
+    }
+
+    &__info {
+        .btn {
+            width: 100%;
+        }
+    }
+
+    @include ml(xs) {
+        &__inner {
+            max-width: 580px;
+            padding: 0 var(--mainPadding);
+            margin: 0 auto;
+        }
+
+        &__title {
+            padding-bottom: 80px;
+            left: 50%;
+            bottom: 0;
+        }
+
+        &__info {
+            padding: 0;
+        }
+    }
+
+    @include ml(sm) {
+        &__inner {
+            max-width: var(--containerWidth);
+        }
+
+        &__title {
+            padding-bottom: 100px;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+
+            .btn {
+                min-width: 340px;
+                width: auto;
+                align-self: center;
+            }
+        }
+    }
+
+    @include ml(md) {
+        &__title {
+            padding-bottom: 160px;
+            font-size: 140px;
+        }
+    }
+
+    @include ml(lg) {
+        &__gates {
+            max-width: 1282px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            padding-bottom: 220px;
+            font-size: 180px;
+        }
+    }
+
+    @include ml(xl) {
+        &__inner {
+            padding-top: 30px;
+        }
+
+        &__title {
+            padding-bottom: 264px;
+            font-size: 240px;
+        }
+    }
+}
+
+.section.section {
+    &--page404 {
+        padding-top: 0;
+    }
+}

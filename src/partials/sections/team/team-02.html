@@ -1,0 +1,17 @@
+<!-- Team -->
+<section class="section section--team">
+    <div class="section__wrapper container">
+        <div class="section__header">
+            <h2 class="section__title section__title--big">Наши тренеры</h2>
+        </div>
+        <div class="section__content">
+            <div class="team">
+                <ul class="team__list grid">
+                    @@loop('items/team.html', '/data/team/team-02.json')
+                </ul>
+            </div>
+
+            @@include('sections/pagination.html')
+        </div>
+    </div>
+</section>

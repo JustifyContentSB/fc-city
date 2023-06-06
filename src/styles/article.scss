@@ -1,0 +1,75 @@
+@import 'partials';
+
+.article {
+    &__item {
+        margin-bottom: 50px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        margin-bottom: 24px;
+    }
+
+    &__info {
+        margin-bottom: 16px;
+    }
+
+    @include ml(lg) {
+        --imgWidth: 470px;
+        --imgMargin: 33px;
+        &__item {
+            margin-bottom: 70px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            &:nth-child(2n) {
+                flex-direction: row-reverse;
+            }
+
+            .article__list--prospects & {
+                flex-direction: row-reverse;
+
+                &:nth-child(2n) {
+                    flex-direction: row;
+                }
+            }
+        }
+
+        &__img {
+            width: var(--imgWidth);
+            min-width: var(--imgWidth);
+            margin: 0;
+            position: sticky;
+            top: 20px;
+        }
+
+        &__info {
+            width: calc(100% - var(--imgWidth) - var(--imgMargin));
+            align-self: center;
+        }
+    }
+
+    @include ml(xl) {
+        --imgWidth: 600px;
+
+        &__item {
+            align-items: center;
+        }
+
+        &__img {
+            position: static;
+        }
+    }
+
+    @include ml(xxl) {
+        --imgWidth: 712px;
+
+        &__item {
+            margin-bottom: 80px;
+        }
+    }
+}

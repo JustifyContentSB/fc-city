@@ -1,0 +1,47 @@
+@import 'partials';
+
+.features {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    &__img {
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: #000;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    @include ml(xl) {
+        &__list.grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__title {
+            font-size: 22px;
+        }
+    }
+
+    @include ml(xxl) {
+        &__list.grid {
+            grid-gap: 40px 35px;
+        }
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__text {
+            padding-right: 7px;
+        }
+    }
+}

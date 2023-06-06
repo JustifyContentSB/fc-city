@@ -1,0 +1,64 @@
+@import 'partials';
+
+.address {
+    &__map {
+        margin-bottom: 30px;
+    }
+
+    &__tel {
+        margin-bottom: 55px;
+    }
+
+    &__manage {
+        margin-bottom: 30px;
+    }
+
+    &__choose {
+        margin-bottom: 30px;
+        @include font-size(30, 36);
+        font-weight: 400;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    @include ml(lg) {
+        &__box {
+            display: flex;
+            align-items: flex-start;
+            min-height: 634px;
+        }
+
+        &__map {
+            margin: 0;
+            margin-right: 30px;
+            width: calc(100% - 360px);
+        }
+
+        &__content {
+            width: 340px;
+            min-width: 340px;
+        }
+    }
+
+    @include ml(xl) {
+        &__top {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__choose {
+            order: -1;
+            margin-right: 30px;
+        }
+
+        &__manage,
+        &__choose {
+            margin-bottom: 0;
+        }
+    }
+}

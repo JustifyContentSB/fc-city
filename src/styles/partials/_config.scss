@@ -1,0 +1,110 @@
+@import 'functions';
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1365px,
+    xxxl: 1520px
+);
+
+$containers: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 100%,
+    xxl: 100%,
+    xxxl: 1510px
+);
+
+$gutter: 15px;
+
+$font-family: 'Exo 2', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-size:   16px;
+$font-weight: normal;
+$line-height: 1.5;
+
+$white:    #ffffff;
+$black:    #1F2B42;;
+$green:     #AEE60F;
+
+$primary:  $green;
+$secondary: $white;
+
+$gray:     #F2F6FC;
+$gray-50:  color($gray, 50);
+$gray-100: color($gray, 100);
+$gray-200: color($gray, 200);
+$gray-300: color($gray, 300);
+$gray-400: color($gray, 400);
+$gray-500: color($gray, 500);
+$gray-600: color($gray, 600);
+$gray-700: color($gray, 700);
+$gray-800: color($gray, 800);
+$gray-900: color($gray, 900);
+
+$body-background: $white;
+$text:            $black;
+$border:          $gray;
+
+$duration: .15s;
+$easing: ease-in-out;
+
+$shadow-x: 0;
+$shadow-y: 0;
+$shadow-blur: 18px;
+$shadow-spread: 0;
+$shadow-color: $black;
+$shadow-depth: 0.07;
+
+$disabled-opacity: 0.2;
+
+$radius: 10px;
+
+$spinner-size: 4em;
+$spinner-color: $primary;
+
+$burger-width: 30px;
+$burger-thickness: 3px;
+$burger-gutter: 5px;
+$burger-color: $white;
+$burger-border-radius: 3px;
+$burger-transition-duration: 0.3s;
+
+$input-radius: $radius;
+$input-border: $border;
+$input-padding: 12px 17px;
+$btn-padding: 19px;
+
+$transition-duration: 0.3s;
+$navbar-duration: 0.3s;
+$burger-color-fixed: #fff;
+
+$section-background: #0B1467;
+$text-color: #0B1467;
+$letter-spacing: 0.3px;
+
+:root {
+    --containerWidth: 540px;
+    --mainPadding: 10px;
+
+    @media screen and (min-width: 576px) {
+        --mainPadding: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        --containerWidth: 720px;
+        --mainPadding: 20px;
+    }
+
+    @media screen and (min-width: 992px) {
+        --containerWidth: 960px;
+        --mainPadding: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        --containerWidth: 1510px;
+    }
+}

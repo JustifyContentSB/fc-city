@@ -1,0 +1,78 @@
+@import 'partials';
+
+.faq {
+    &__item {
+        margin-bottom: 16px;
+        padding: 10px var(--mainPadding);
+        background: $gray;
+        color: $black;
+        border-radius: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__theme {
+        margin: 0;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 120%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-btn {
+            margin-left: 20px;
+
+            &.is-active {
+                background: #fff;
+                border: 1px solid #F2F2F2;
+
+                .icon {
+                  transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    &__answer {
+        padding: 16px 0 8px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        display: none;
+
+        P:last-child {
+            margin: 0;
+        }
+    }
+
+    @include ml(md) {
+        &__item {
+            padding: 15px var(--mainPadding);
+        }
+    }
+
+    @include ml(xl) {
+        &__item {
+            margin-bottom: 20px;
+            padding: 26px 36px;
+            border-radius: 16px;
+        }
+
+        &__theme {
+            font-size: 24px;
+        }
+
+        &__answer {
+            padding-right: 35px;
+        }
+    }
+
+    @include ml(xxl) {
+        &__answer {
+            padding-right: 60px;
+        }
+    }
+}

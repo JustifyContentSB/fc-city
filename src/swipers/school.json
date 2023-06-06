@@ -1,0 +1,29 @@
+{
+    "slidesPerView": "auto",
+    "navigation": true,
+    "spaceBetween": 20,
+    "loop": false,
+    "breakpoints": {
+      "0": {
+        "spaceBetween": 10
+      },
+      "576": {
+        "spaceBetween": 10
+      },
+      "992": {
+        "slidesPerView": "auto",
+        "spaceBetween": 20
+      },
+      "1200": {
+        "slidesPerView": "auto"
+      },
+      "1380": {
+        "slidesPerView": "auto"
+      },
+      "1610": {
+        "slidesPerView": "auto"
+      }
+    }
+  }
+
+

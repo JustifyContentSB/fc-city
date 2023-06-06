@@ -1,0 +1,38 @@
+@import 'partials';
+
+.main {
+    padding-bottom: 75px;
+    flex-grow: 1;
+
+    .page--secondary & {
+         padding-bottom: 0;
+
+         & > *:last-child {
+            padding-bottom: 0;
+         }
+    }
+
+    .page--img & {
+        padding-top: 0;
+    }
+
+    @include ml(lg) {
+        .page:not(.page--home):not(.page--img) & {
+            padding-top: 20px;
+        }
+    }
+
+    @include ml(xl) {
+        padding-bottom: 65px;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}

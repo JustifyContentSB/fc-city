@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "img": "images/team/team-01.jpg",
+        "name": "Салугин Иван Евгеньевич",
+        "profession": "Старший тренер-методист"
+    },
+    {
+        "id": 2,
+        "img": "images/team/team-02.jpg",
+        "name": "Алексеевский Артём Андреевич",
+        "profession": "Тренер старшей школы"
+    },
+    {
+        "id": 3,
+        "img": "images/team/team-03.jpg",
+        "name": "Попов Андрей Александрович",
+        "profession": "Тренер старшей школы"
+    },
+    {
+        "id": 4,
+        "img": "images/team/team-04.jpg",
+        "name": "Хуторсков Даниил Александрович",
+        "profession": "Тренер старшей школы"
+    },
+    {
+        "id": 5,
+        "img": "images/team/team-05.jpg",
+        "name": "Калинин Андрей Дмитриевич",
+        "profession": "Старший тренер-методист"
+    },
+    {
+        "id": 6,
+        "img": "images/team/team-06.jpg",
+        "name": "Стрелков Андрей Валерьевич",
+        "profession": "Старший тренер-методист"
+    },
+    {
+        "id": 7,
+        "img": "images/team/team-07.jpg",
+        "name": "Ялбуев Вадим Дмитриевич",
+        "profession": "Тренер старшей школы"
+    },
+    {
+        "id": 8,
+        "img": "images/team/team-08.jpg",
+        "name": "Татаринов Дмитрий Тимурович",
+        "profession": "Тренер старшей школы"
+    },
+    {
+        "id": 9,
+        "img": "images/team/team-09.jpg",
+        "name": "Арсентьев Алексей Дмитриевич",
+        "profession": "Тренер старшей школы"
+    },
+    {
+        "id": 10,
+        "img": "images/team/team-10.jpg",
+        "name": "Давыдкин Максим Игоревич",
+        "profession": "Тренер старшей школы"
+    },
+    {
+        "id": 11,
+        "img": "images/team/team-11.jpg",
+        "name": "Артамонов Дмитрий Николаевич",
+        "profession": "Тренер старшей школы"
+    },
+    {
+        "id": 12,
+        "img": "images/team/team-12.jpg",
+        "name": "Багиров Тахир Эльманович",
+        "profession": "Тренер старшей школы"
+    }
+]

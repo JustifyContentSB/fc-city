@@ -1,0 +1,55 @@
+@import 'partials';
+
+.breadcrumbs {
+    padding-top: 10px;
+
+    &__list {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+            padding-right: 16px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 2px;
+                height: 2px;
+                border-radius: 50%;
+                background: $text-color;
+            }
+        }
+    }
+
+    &__btn {
+        color: $text-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: $letter-spacing;
+        white-space: nowrap;
+    }
+
+    @include ml(lg) {
+        &__list {
+            overflow-x: visible;
+        }
+    }
+}

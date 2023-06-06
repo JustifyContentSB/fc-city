@@ -1,0 +1,70 @@
+@import 'partials';
+
+.btn {
+    display: inline-block;
+    color: $black;
+    background-color: $primary;
+    border-radius: $input-radius;
+    padding: $btn-padding;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    @include transition(background-color);
+
+    @include hover() {
+        color: $white;
+        background-color: lighten($primary, 2.5%);
+    }
+
+    &-circle {
+        width: 48px;
+        min-width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        background: $green;
+        color: $black;
+        font-size: 10px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        &--outline {
+            background: #FFFFFF;
+            border: 1px solid #F2F2F2;
+        }
+
+        &:hover,
+        &:focus {
+            color: inherit;
+        }
+    }
+
+    &-outline {
+        padding: 15px 16px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        text-align: center;
+        background: $gray;
+        color: $black;
+        border-radius: 10px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include ml(sm) {
+        padding: 19px 42px;
+    }
+
+    @include ml(xl) {
+        padding: 19px 47px;
+
+        &-outline {
+            padding: 14px 16px;
+            font-size: 20px;
+        }
+    }
+}

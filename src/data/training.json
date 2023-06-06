@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "img": "images/training/training-01.jpg",
+        "price": "3 700 ₽/мес",
+        "title": "Подготовительная школа",
+        "description": "Для детей от 3 до 6 лет"
+    },
+    {
+        "id": 2,
+        "img": "images/training/training-02.jpg",
+        "price": "4 000 ₽/мес",
+        "title": "Старшая школа",
+        "description": "Для детей от 6 до 15 лет"
+    }
+]

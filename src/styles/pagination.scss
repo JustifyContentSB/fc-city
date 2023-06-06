@@ -1,0 +1,66 @@
+@import 'partials';
+
+.pagination {
+    &__box {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+
+    &__top {
+        margin-bottom: 20px;
+
+        .btn {
+            width: 100%;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        li {
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+
+            &:last-child {
+                margin-left: auto;
+            }
+        }
+    }
+
+    &__btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        min-width: 35px;
+        height: 35px;
+        background: $gray;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        color: $black;
+
+        &.is-active {
+            background: $green;
+        }
+    }
+
+    .section & {
+        margin-top: 36px;
+
+        @include ml(xs) {
+            margin-top: 45px;
+        }
+
+        @include ml(xl) {
+            margin-top: 60px;
+        }
+
+        @include ml(xxl) {
+            margin-top: 70px;
+        }
+    }
+}

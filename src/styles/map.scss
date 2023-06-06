@@ -1,0 +1,108 @@
+@import 'partials';
+
+.map {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: $gray-300;
+
+    @include ms(xl) {
+        padding-bottom: 56.5%;
+    }
+
+    @include ms(lg) {
+        padding-bottom: 0;
+    }
+
+    &.is-ready {
+        .map__scene {
+            opacity: 1;
+        }
+
+        .map__spinner {
+            opacity: 0;
+        }
+    }
+
+    &__scene,
+    &__spinner {
+        @include transition(opacity);
+    }
+
+    &__scene {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+
+        @include ms(lg) {
+            position: static;
+            height: 400px;
+        }
+    }
+
+    &__spinner {
+        @include spinner($color: 'red');
+    }
+
+    &__caption {
+        position: absolute;
+        top: 1%;
+        left: 6%;
+        overflow: hidden;
+        width: 344px;
+        height: 93%;
+        padding-top: 12px;
+        box-shadow: none;
+        border-radius: $radius;
+        background-color: $white;
+
+        @include shadow;
+
+        @include ms(lg) {
+            position: static;
+            width: 100%;
+        }
+
+        .object {
+            background: $white;
+
+            @include ms(lg) {
+                border: none;
+            }
+
+            &__rating,
+            &__text,
+            &__content .object__row {
+                display: none;
+            }
+
+            &__title {
+                margin-bottom: 0;
+            }
+
+            &__content {
+                flex: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    [class$="_disabled"] {
+        display: none;
+    }
+}
+
+.marker {
+    width: 43px;
+    height: 54px;
+    background: red;
+
+    &.is-active {
+        width: 50px;
+    }
+}
+

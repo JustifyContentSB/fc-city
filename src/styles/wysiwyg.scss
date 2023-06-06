@@ -1,0 +1,154 @@
+@import 'partials';
+
+.wysiwyg {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+
+    h2, h3, h4, h5, h6 {
+        margin-bottom: 20px;
+        font-weight: 700;
+        line-height: 120%;
+        color: $text-color;
+    }
+
+    h2 {
+        font-size: 30px;
+
+        &.section__title--big {
+            font-size: 32px;
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+
+    ul {
+        margin: 16px 0;
+
+        li {
+            margin-bottom: 6px;
+            padding-left: 35px;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 3px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: $green;
+            }
+        }
+    }
+
+    ol {
+        margin: 16px 0;
+        list-style-type: none;
+	    counter-reset: num;
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 32px;
+            position: relative;
+
+            &::before {
+                content: counter(num) '';
+                counter-increment: num;
+                display: inline-block;
+                position: absolute;
+                top: 2px;
+                left: 0;
+                width: 20px;
+                color: $green;
+                text-align: left;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 120%;
+            }
+        }
+    }
+
+    img {
+        display: block;
+        margin-bottom: 24px;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 16px;
+    }
+
+    b {
+        color: $text-color;
+    }
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+
+    &--secondary {
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    @include ml(lg) {
+        h2 {
+            font-size: 32px;
+
+            &.section__title--big {
+                font-size: 34px;
+            }
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+    }
+
+    @include ml(xl) {
+        h2 {
+            font-size: 34px;
+
+            &.section__title--big {
+                font-size: 36px;
+            }
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+    }
+
+    @include ml(xl) {
+        h2 {
+            font-size: 36px;
+
+            &.section__title--big {
+                font-size: 40px;
+            }
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        h4 {
+            font-size: 24px;
+        }
+    }
+}
